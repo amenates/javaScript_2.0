@@ -18,7 +18,7 @@
     <section>
         <p><b>Task 1.</b></p>
         <p>При нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать содержимое i-1 и сравнить его с числом 4 (сравнение ==). Результат сравнения - true или false выведите в out-1.</p>
-        <div class="form-control">Input i-1 <input type="number" class="i-1"></div>
+        <div class="form-control">Введите любое число: <input type="number" class="i-1"></div>
         <button class="button-primary b-1">Task-1</button>
         <div class="out-1"></div>
     </section>
@@ -34,8 +34,8 @@
         <p><b>Task 3.</b></p>
         <p>Даны 2 input - i-31 и i-32, оба - input[type=number]. При нажатии кнопки b-3 срабатывает функция f3. Функция должна вычитать содержимое i-31 и i-31 в переменные и сравнить их, вывести в  out-3 большее число.</p>
         <p>Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.</p>
-        <div class="form-control">Input i-31 <input type="number" class="i-31"></div>
-        <div class="form-control">Input i-32 <input type="number" class="i-32"></div>
+        <div class="form-control">Введите 1ое число: <input type="number" class="i-31"></div>
+        <div class="form-control">Введите 2ое число: <input type="number" class="i-32"></div>
         <button class="button-primary b-3">Task-3</button>
         <div class="out-3"></div>
     </section>
@@ -44,7 +44,7 @@
         <p><b>Task 4.</b></p>
         <p>Создайте на странице input[type=number] с классом i-4, куда пользователь может ввести год своего рождения. Есть кнопка b-4 которая запускает функцию f4. Функция должна вывести в  .out-4 число 1 если пользователю больше или равно 18 лет, и 0 если меньше.
         </p>
-        <div class="form-control">Input i-4 <input type="number" class="i-4"></div>
+        <div class="form-control">Введите год вашего рождения: <input type="number" class="i-4"></div>
         <button class="button-primary b-4">Task-4</button>
         <div class="out-4"></div>
     </section>
@@ -52,7 +52,7 @@
     <section>
         <p><b>Task 5.</b></p>
         <p> Создайте на странице input[type=number] с классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция должна вывести в  .out-5 символ m если число меньше нуля, 0 если число равно нулю и 1 если больше.</p>
-        <div class="form-control">Input i-5 <input type="number" class="i-5"></div>
+        <div class="form-control">Введите любое число: <input type="number" class="i-5"></div>
         <button class="button-primary b-5">Task-5</button>
         <div class="out-5"></div>
     </section>
@@ -60,7 +60,7 @@
     <section>
         <p><b>Task 6.</b></p>
         <p>Создайте на странице input[type=number] с классом i-6, куда пользователь может ввести число. Есть кнопка b-6 которая запускает функцию f6. Функция должна вывести в  .out-6  слово even если число четное и odd если нечетное. Для проверки четности используется целочисленный остаток от деления на 2 (оператор %). Если остаток равен нулю  - четное, нет - нечетное. </p>
-        <div class="form-control">Input i-6 <input type="number" class="i-6"></div>
+        <div class="form-control">Введите любое число: <input type="number" class="i-6"></div>
         <button class="button-primary b-6">Task-6</button>
         <div class="out-6"></div>
     </section>
@@ -68,8 +68,8 @@
     <section>
         <p><b>Task 7.</b></p>
         <p>Даны 2 input - i-71 и i-72, оба - input[type=number]. При нажатии кнопки b-7 срабатывает функция f7. Функция должна число из i-71 возвести в степень i-72, вывести результат в  out-7. Для возведения в степень можно использовать **, или Math.pow.</p>
-        <div class="form-control">Input i-71 <input type="number" class="i-71"></div>
-        <div class="form-control">Input i-72 <input type="number" class="i-72"></div>
+        <div class="form-control">Введите любое число: <input type="number" class="i-71"></div>
+        <div class="form-control">Введите степень <input type="number" class="i-72"></div>
 
         <button class="button-primary b-7">Task-7</button>
         <div class="out-7"></div>
@@ -95,11 +95,11 @@
         </p>
         <ul>
             <li>если от 1 до 32 - то вывести цифру 1</li>
-            <li>   если от 33 до 43 - то вывести 2</li>
-            <li>  если от 44 до 64 - то 3.</li>
-            <li>  В противном случае, вывести 0.</li>
+            <li>если от 33 до 43 - то вывести 2</li>
+            <li>если от 44 до 64 - то 3</li>
+            <li>в противном случае, вывести 0</li>
         </ul>
-        <div class="form-control">Input i-9 <input type="number" class="i-9"></div>
+        <div class="form-control">Введите номер квартиры: <input type="number" class="i-9"></div>
 
         <button class="button-primary b-9">Task-9</button>
         <div class="out-9"></div>
@@ -109,8 +109,8 @@
         <p><b>Task 10.</b></p>
         <p>Дан input i-101 и input-102, type=number.  Дан select s-103, который содержит две операции - +, -, *, / . Дана кнопка b-10, при нажатии на которую срабатывает функция f10. Функция выводит в out-10 результат операций выбранной в 3-м select к числам введенным в первом и втором input. Например выбрано 1 13 +, нужно вывести результат операции 1+13 т.е.  14.
         </p>
-        <div class="form-control">Input i-101 <input type="number" class="i-101"></div>
-        <div class="form-control">Input i-102 <input type="number" class="i-102"></div>
+        <div class="form-control">Введите 1ое число: <input type="number" class="i-101"></div>
+        <div class="form-control">Введите 2ое число: <input type="number" class="i-102"></div>
         <div class="form-control">
             <select class="s-103">
                 <option value="+">+</option>
