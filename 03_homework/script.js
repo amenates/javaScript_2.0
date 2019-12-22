@@ -162,21 +162,21 @@ let out10 = document.querySelector('.out-10');
 b10.onclick = function f10() {
   let num101 = +i101.value;
   let num102 = +i102.value;
-    
-    switch (s103.value) {
-        case '-':
-            out10.innerHTML = num101 - num102;
-            break;
-        case '+':
-            out10.innerHTML = num101 + num102;
-            break;
-        case '*':
-            out10.innerHTML = num101 * num102;
-            break;
-        case '/':
-            out10.innerHTML = num101 / num102;
-            break;
-    }
+
+  switch (s103.value) {
+    case '-':
+      out10.innerHTML = num101 - num102;
+      break;
+    case '+':
+      out10.innerHTML = num101 + num102;
+      break;
+    case '*':
+      out10.innerHTML = num101 * num102;
+      break;
+    case '/':
+      out10.innerHTML = num101 / num102;
+      break;
+  }
 }
 
 // task 11 --------------------
