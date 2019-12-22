@@ -1,156 +1,212 @@
-// task 1 --------------------
+// Task 1.
+// Создайте две переменные a = 7 и b = 9. Выведите в консоль результа умножения a на b.
 let a = 7;
 let b = 9;
 console.log(a * b);
 
-// task 2 --------------------
+// Task 2.
+// Создайте две переменные c = 7 и d = 9. Выведите на страницу в .out-2 результат деления c на d.
 let c = 7;
 let d = 9;
-document.querySelector('.seg').innerHTML = c / d;
 
-// task 3 --------------------
+document.querySelector('.out-2').textContent = c / d;
+
+// Task 3.
+// Создайте две переменные e = 3 и f = 5. Выведите на страницу  в .out-3 результат сложения e + f.
 let e = 3;
 let f = 5;
-document.querySelector('.sum').innerHTML = e + f;
 
-// task 4 --------------------
+document.querySelector('.out-3').textContent = e + f;
+
+// Task 4.
+// Создайте две переменные e1 = '3' и f1 = 5. Выведите на страницу  в .out-4 результат сложения e1 + f1. Объясните разницу.
+
 let e1 = '3';
 let f1 = 5;
-document.querySelector('.concat').innerHTML = e1 + f1; // произошла конкатенация.
 
-// task 5 --------------------
+document.querySelector('.out-4').textContent = e1 + f1; // произошла конкатенация.
+
+// Task 5.
+// Создайте две переменные e2 = 3 и f2 = 0. Выведите на страницу  в .out-5 результат деления e2 на f2.
+
 let e2 = 3;
 let f2 = 0;
-document.querySelector('.seg2').innerHTML = e2 / f2;
 
-// task 6 --------------------
+document.querySelector('.out-5').textContent = e2 / f2;
+
+// Task 6.
+// Создайте две переменные e3 = 3 и f3 = 'Hello'. Выведите на страницу  в .out-6 результат сложения двух переменных.
+
 let e3 = 3;
 let f3 = 'Hello';
-document.querySelector('.concat3').innerHTML = e3 + f3;
 
-// task 7 --------------------
+document.querySelector('.out-6').textContent = e3 + f3;
+
+// Task 7.
+// Создайте две переменные e4 = 3 и f4 = 'Hello'. Выведите на страницу  в .out-7 результат умножения двух переменных.
+
 let e4 = 3;
 let f4 = 'Hello';
-document.querySelector('.mul').innerHTML = e4 * f4;
 
-// task 8 --------------------
-let int = document.querySelector('.int');
-let but = document.querySelector('.but');
+document.querySelector('.out-7').textContent = e4 * f4;
 
-but.onclick = function f1() {
-  console.log(int.value);
+// Task 8.
+// Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит в консоль то, что пользователь ввел в input.
+
+let i8 = document.querySelector('.i-8');
+
+function t8() {
+    console.log(i8.value);
 }
 
-// task 9 --------------------
-let int1 = document.querySelector('.int1');
-let but1 = document.querySelector('.but1');
-let out1 = document.querySelector('.out1');
+document.querySelector('.b-8').onclick = t8;
 
-but1.onclick = function f2() {
-  out1.innerHTML = int1.value;
-  int1.value = '';
+// Task 9.
+// Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу,  что пользователь ввел в input. Добавьте очистку input после нажатия кнопки.
+
+let i9 = document.querySelector('.i-9');
+let out9 = document.querySelector('.out-9');
+
+function t9() {
+    out9.textContent = i9.value;
+    i9.value = '';
 }
 
-// task 10 --------------------
-let int2 = document.querySelector('.int2');
-let but2 = document.querySelector('.but2');
-let out2 = document.querySelector('.out2');
+document.querySelector('.b-9').onclick = t9;
 
-but2.onclick = function f3() {
-  out2.innerHTML = int2.value * 10;
+// Task 10.
+// Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу число, которое ввел пользователь умноженное на 10.
+
+let i10 = document.querySelector('.i-10');
+let out10 = document.querySelector('.out-10');
+
+function t10() {
+    out10.textContent = i10.value * 10;
 }
 
-// task 11 --------------------
-let int3 = document.querySelector('.int3');
-let but3 = document.querySelector('.but3');
-let out3 = document.querySelector('.out3');
+document.querySelector('.b-10').onclick = t10;
 
-but3.onclick = function f4() {
-  out3.innerHTML = +int3.value + 10;
-}
-// task 12 --------------------
-let firstName = document.querySelector('.first-name');
-let lastName = document.querySelector('.last-name');
-let butGo = document.querySelector('.but-go');
+// Task 11.
+// Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу в .out-11 число, которое ввел пользователь и к нему добавленное число 10.
 
-butGo.onclick = function f5() {
-  console.log('Hello' + ' ' + firstName.value + ' ' + lastName.value);
+let i11 = document.querySelector('.i-11');
+let out11 = document.querySelector('.out-11');
+
+function t11() {
+    out11.textContent = +i11.value + 10;
 }
 
-// task 13 --------------------
-let num1 = document.querySelector('.num1');
-let num2 = document.querySelector('.num2');
-let butSum = document.querySelector('.but-sum');
-let outSum = document.querySelector('.out-sum');
+document.querySelector('.b-11').onclick = t11;
 
-butSum.onclick = function f6() {
-  let n1 = +num1.value;
-  let n2 = +num2.value;
-  outSum.innerHTML = n1 + n2;
+// Task 12.
+// Создайте два input (i-12_1 и i-12-2) и кнопку. В первый input пользователь вводит имя, во второе фамилию. При нажатии кнопки выполняется функция, которая выводит в .out-12 строку 'Hello имя фамилия', где имя - имя пользователя и фамилия - введенная фамилия.
+
+let firstName = document.querySelector('.i-12_1');
+let lastName = document.querySelector('.i-12_2');
+let out12 = document.querySelector('.out-12');
+
+function t12() {
+    out12.textContent = 'Hello' + ' ' + firstName.value + ' ' + lastName.value;
 }
 
-// task 14 --------------------
-let numChange = document.querySelector('.num-change');
-let butChange = document.querySelector('.but-change');
+document.querySelector('.b-12').onclick = t12;
 
-butChange.onclick = function f7() {
-  numChange.value = 'Hello';
+// Task 13.
+// Создайте два input и кнопку. В input пользователь вводит числа. При нажатии кнопки выполняется функция, которая выводит сумму данных двух чисел на страницу в .out-13.
+
+let num1 = document.querySelector('.i-13_1');
+let num2 = document.querySelector('.i-13_2');
+let out13 = document.querySelector('.out-13');
+
+function t13() {
+    let n1 = +num1.value;
+    let n2 = +num2.value;
+    out13.innerHTML = n1 + n2;
 }
 
-// task 15 --------------------
-let y = document.querySelector('.style-border');
+document.querySelector('.b-13').onclick = t13;
+
+// Task 14.
+// Создайте input .i-14 и пропишите ему в html value = 77. С помощью JS измените value на 'Hello'.
+
+function t14() {
+    document.querySelector('.i-14').value = 'Hello';
+}
+
+document.querySelector('.b-14').onclick = t14;
+
+// Task 15.
+// Создайте input i-15 и получите его в переменную y. В js выполните следующее присвоение: y.style.border = '2px solid red' . Изучите результат операции.
+
+let y = document.querySelector('.i-15');
 y.style.border = '2px solid red';
 
-// task 16 --------------------
-let typeNumber1 = document.querySelector('.type-num1');
-let typeNumber2 = document.querySelector('.type-num2');
-let butSumNumber = document.querySelector('.but-sum-number');
-let outSumNumber = document.querySelector('.out-sum-number');
+// Task 16.
+// Создайте два input type=number, куда пользователь может ввести числа. Выведите на страницу сумму данных чисел по нажатию кнопки b-16
 
-butSumNumber.onclick = function f8() {
-  let typeNum1 = +typeNumber1.value;
-  let typeNum2 = +typeNumber2.value;
-  outSumNumber.innerHTML = typeNum1 + typeNum2;
+let typeNumber1 = document.querySelector('.i-16_1');
+let typeNumber2 = document.querySelector('.i-16_2');
+let out16 = document.querySelector('.out-16');
+
+function t16() {
+    let typeNum1 = +typeNumber1.value;
+    let typeNum2 = +typeNumber2.value;
+    out16.textContent = typeNum1 + typeNum2;
 }
 
-// task 17 --------------------
-let but4 = document.querySelector('.but4');
+document.querySelector('.b-16').onclick = t16;
 
-but4.onclick = function () {
-  let t = document.querySelector('.int4');
-  t = parseInt(t.value);
-  console.log(t);
+// Task 17.
+// Создайте input type="text" куда пользователь может ввести строку и число. Создайте функцию, которая запускается по нажатию на кнопку. Получите значение из input в переменную t. А затем сделайте операцию t = parseInt(t), и результат операции выведите в out-17. Прочитайте за эту операцию. Попробуйте по очереди вводить 44, 44aaa, 44.3, a45 . Изучите вывод.
+
+let out17 = document.querySelector('.out-17');
+
+function t17() {
+    let t = document.querySelector('.i-17');
+    t = parseInt(t.value);
+    out17.textContent = t;
 }
 
-// task 18 --------------------
-let butF = document.querySelector('.but-f1');
+document.querySelector('.b-17').onclick = t17;
 
-butF.onclick = function () {
-  let m = document.querySelector('.f1');
-  m = parseFloat(m.value);
-  console.log(m);
+// Task 18.
+// Создайте input type="text" куда пользователь может ввести строку и число. Создайте функцию, которая запускается по нажатию на кнопку. Получите значение из input в переменную t. А затем сделайте операцию t = parseFloat(t), и результат операции выведите в консоль. Прочитайте за эту операцию. Попробуйте по очереди вводить 44, 44aaa, 44.3, a45 . Изучите вывод.
+
+function t18() {
+    let m = document.querySelector('.i-18');
+    m = parseFloat(m.value);
+    console.log(m);
 }
 
-// task 19 --------------------
-let negativeNum1 = document.querySelector('.negative-num1');
-let negativeNum2 = document.querySelector('.negative-num2');
-let butNegativeSum = document.querySelector('.but-negative-sum');
-let outNegativeSum = document.querySelector('.out-negative-num');
+document.querySelector('.b-18').onclick = t18;
 
-butNegativeSum.onclick = function f9() {
-  let negN1 = parseInt(negativeNum1.value);
-  let negN2 = parseInt(negativeNum2.value);
-  outNegativeSum.innerHTML = negN1 + negN2;
+// Task 19.
+// Создайте два input type=number, куда пользователь может ввести отрицательные числа. Выведите на страницу сумму данных чисел. Мы это делали! Зачем? Затем, что нужно понимать как влияет перевод в число с помощью + и parseInt на отрицательные числа!!!
+
+let negativeNum1 = document.querySelector('.i-19_1');
+let negativeNum2 = document.querySelector('.i-19_2');
+let out19 = document.querySelector('.out-19');
+
+
+function t19() {
+    let negN1 = parseInt(negativeNum1.value);
+    let negN2 = parseInt(negativeNum2.value);
+    out19.textContent = negN1 + negN2;
 }
 
-// task 20 --------------------
+document.querySelector('.b-19').onclick = t19;
+
+// Task 20
+// Создайте опросник, куда пользователь может ввести имя, фамилию, возраст, род занятий. И кнопку. По нажатию кнопки выведите на страницу предложение 'Уважаемый Иван, Иванов, ваш возраст 33 года, по професси вы ...' куда поставьте соответствующие данные из inputов.
+
 let firstNameQuest = document.querySelector('.first-name-quest');
 let lastNameQuest = document.querySelector('.last-name-quest');
 let age = document.querySelector('.age');
 let prof = document.querySelector('.prof');
-let butStart = document.querySelector('.but-start');
-let outQuest = document.querySelector('.out-quest');
+let out20 = document.querySelector('.out-20');
 
-butStart.onclick = function f10() {
-  outQuest.innerHTML = 'Уважаемый' + ' ' + firstNameQuest.value + ' ' + lastNameQuest.value + ',' + ' ' + 'ваш возраст' + ' ' + ' ' + age.value + ' ' + 'года' + ',' + ' ' + 'по профессии вы' + ' ' + prof.value + '.';
+function t20() {
+    out20.textContent = 'Уважаемый' + ' ' + firstNameQuest.value + ' ' + lastNameQuest.value + ',' + ' ' + 'ваш возраст' + ' ' + ' ' + age.value + ' ' + 'года' + ',' + ' ' + 'по профессии вы' + ' ' + prof.value + '.';
 }
+
+document.querySelector('.b-20').onclick = t20;
