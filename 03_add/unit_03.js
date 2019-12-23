@@ -314,10 +314,14 @@ document.querySelector('.b-16').onclick = f16;
 // Создайте 2 инпута. В первый пользователь может ввести число денег в долларах. Во второй - строку euro, rub, uah. Используя if, elseif сделайте по нажатию кнопки пересчет в ту валюту, которую ввел пользователь. Коэффициенты - найдите в сети интернет.
 
 let i171 = document.querySelector('.i-171');
-let i172 = document.querySelector('.i-172');
+let i172 = document.querySelector('.i-172'); // наименование валюты
 let out17 = document.querySelector('.out-17');
 
 function f17() {
+  let money = +i171.value;
+  let cur = i172.value;
+
+
 }
 
 document.querySelector('.b-17').onclick = f17;
