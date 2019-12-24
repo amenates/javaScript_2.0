@@ -312,25 +312,107 @@ document.querySelector('.b-16').onclick = f16;
 
 // Task 17
 // Создайте 2 инпута. В первый пользователь может ввести число денег в долларах. Во второй - строку euro, rub, uah. Используя if, elseif сделайте по нажатию кнопки пересчет в ту валюту, которую ввел пользователь. Коэффициенты - найдите в сети интернет.
-
 let i171 = document.querySelector('.i-171');
-let i172 = document.querySelector('.i-172'); // наименование валюты
+let i172 = document.querySelector('.i-172');
 let out17 = document.querySelector('.out-17');
 
 function f17() {
-  let money = +i171.value;
-  let cur = i172.value;
+  let money18 = +i171.value;
+  let cup = i172.value;
 
-
+  if (cup == 'rub') {
+    out17.textContent = `В рублях это: ${money18 * 62.2499.toFixed()} RUB`;
+  }
+  else if (cup == 'euro') {
+    out17.textContent = `В евро это: ${money18 * 0.9022.toFixed()} EURO`;
+  }
+  else  if (cup == 'uah') {
+    out17.textContent = `В гривнах это: ${money18 * 23.26.toFixed()} UAH`;
+  }
 }
 
 document.querySelector('.b-17').onclick = f17;
 
 // Task 18
 // Проделайте предыдущую задачу с помощью switch case.
+let i181 = document.querySelector('.i-181');
+let i182 = document.querySelector('.i-182');
+let out18 = document.querySelector('.out-18');
+
+function f18() {
+  let money = +i181.value;
+
+  switch (i182.value) {
+    case 'rub':
+      out18.textContent = `В рублях это: ${money * 62.2499.toFixed()} RUB`;
+      break;
+    case 'euro':
+      out18.textContent = `В евро это: ${money * 0.9022.toFixed()} EURO`;
+      break;
+    case 'uah':
+      out18.textContent = `В гривнах это: ${money * 23.26.toFixed()} UAH`;
+      break;
+  }
+}
+
+document.querySelector('.b-18').onclick = f18;
+
+
 
 // Task 19
 // Создайте 2 input куда пользователь может ввести числа. В третий input - может ввести знак - минус, плюс, умножить, поделить. С помощью if, else if по нажатию кнопки выводите результат выбранной операции на страницу.
 
+let i191 = document.querySelector('.i-191');
+let i192 = document.querySelector('.i-192');
+let i193 = document.querySelector('.i-193');
+let out19 = document.querySelector('.out-19');
+
+function f19() {
+  let n191 = +i191.value;
+  let n192 = +i192.value;
+  let oper = i193.value;
+
+  if (oper == '+') {
+    out19.textContent = n191 + n192;
+  }
+  else if (oper == '-') {
+    out19.textContent = n191 - n192;
+  }
+  else if (oper == '*') {
+    out19.textContent = n191 * n192;
+  }
+  else if (oper == '/') {
+    out19.textContent = n191 / n192;
+  }
+}
+
+document.querySelector('.b-19').onclick = f19;
+
 // Task 20
 // Проделайте предыдущую задачу с помощью switch case.
+let i201 = document.querySelector('.i-201');
+let i202 = document.querySelector('.i-202');
+let i203 = document.querySelector('.i-203');
+let out20 = document.querySelector('.out-20');
+
+function f20() {
+  let n201 = +i201.value;
+  let n202 = +i202.value;
+
+  switch (i203.value) {
+    case '+':
+      out20.textContent = n201 + n202;
+      break;
+    case '-':
+      out20.textContent = n201 - n202;
+      break;
+    case '*':
+      out20.textContent = n201 * n202;
+      break;
+    case '/':
+      out20.textContent = n201 / n202;
+      break;
+  }
+}
+
+document.querySelector('.b-20').onclick = f20;
