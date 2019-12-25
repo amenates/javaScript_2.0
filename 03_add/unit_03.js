@@ -193,13 +193,13 @@ let i12 = document.querySelector('.i-12');
 function f12() {
   switch (+i12.value) {
     case 1:
-      console.log(1);
+      console.log('Один');
       break;
     case 2:
-      console.log(2);
+      console.log('Два');
       break;
     case 3:
-      console.log(3);
+      console.log('Три');
       break;
   }
 }
@@ -356,8 +356,6 @@ function f18() {
 }
 
 document.querySelector('.b-18').onclick = f18;
-
-
 
 // Task 19
 // Создайте 2 input куда пользователь может ввести числа. В третий input - может ввести знак - минус, плюс, умножить, поделить. С помощью if, else if по нажатию кнопки выводите результат выбранной операции на страницу.

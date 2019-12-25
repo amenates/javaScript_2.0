@@ -218,8 +218,8 @@ let s112 = document.querySelector('.s-112');
 let s113 = document.querySelector('.s-113');
 
 function f11(){
-  let num111 = s111.value;
-  let num112 = s112.value;
+  let num111 = +s111.value;
+  let num112 = +s112.value;
 
   if (s113.value == '&&') {
     out11.textContent = num111 && num112;
