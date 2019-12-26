@@ -13,11 +13,11 @@
 //     // присваиваем стили
 //     document.querySelector('button').style.backgroundColor = document.querySelector('.i-1').value;
 // }
-//
-// document.querySelector('.i-1').oninput = () => {
-//     console.log(document.querySelector('.i-1').value);
-//     document.querySelector('span').textContent = document.querySelector('.i-1').value;
-// }
+
+document.querySelector('.i-1').oninput = () => {
+    console.log(document.querySelector('.i-1').value);
+    document.querySelector('span').textContent = document.querySelector('.i-1').value;
+}
 
 document.querySelector('#btn-1').onclick = () => {
     console.log(document.querySelector('#i2').value);
