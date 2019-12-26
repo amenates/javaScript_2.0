@@ -221,7 +221,7 @@ function f11(){
   let num111 = +s111.value;
   let num112 = +s112.value;
 
-  if (s113.value == '&&') {
+  if (s113.value === '&&') {
     out11.textContent = num111 && num112;
   }
   else {
