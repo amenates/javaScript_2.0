@@ -115,7 +115,7 @@ document.querySelector('.b-14').onclick = () => {
 // Task 15
 // Создайте text-area, input и button - при нажатии на кнопку выводите текс из input в textarea и на страницу.
 document.querySelector('.b-15').onclick = () => {
-
+  //document.querySelector('.text-15');
 };
 
 // Task 16
