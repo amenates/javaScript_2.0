@@ -5,7 +5,9 @@
 
 
 function t1() {
-
+  for (let i = 1; i >= 50; i++) {
+    console.log(i);
+  }
 }
 
 document.querySelector('.b-1').onclick = t1;
