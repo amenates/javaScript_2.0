@@ -3,10 +3,11 @@
 //     1 2 3 4 5 6 7 8 9 ... 49 50
 // от 1 до 50 включительно. Разделитель - пробел. Задача решается с помощью цикла.
 
-
+let out1 = '';
 function t1() {
-  for (let i = 1; i >= 50; i++) {
-    console.log(i);
+  for (let i = 1; i <= 50; i++) {
+    out1 += i + ' ';
+    document.querySelector('.out-1').innerHTML = out1;
   }
 }
 
