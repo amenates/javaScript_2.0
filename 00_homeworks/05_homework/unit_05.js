@@ -111,8 +111,14 @@ document.querySelector('.b-6').onclick = t6;
 //     4 3 2 1
 // Задача решается с помощью цикла.
 
+let out7 = '';
 function t7() {
+  let int7 = +document.querySelector('.i-7').value;
 
+  for (let i = int7; i >= 0; i--) {
+    out7 += i + ' ';
+    document.querySelector('.out-7').innerHTML = out7;
+  }
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -126,8 +132,15 @@ document.querySelector('.b-7').onclick = t7;
 //     4 5 6 7 8
 // Задача решается с помощью цикла.
 
+let out8 = '';
 function t8() {
+  let int81 = +document.querySelector('.i-81').value;
+  let int82 = +document.querySelector('.i-82').value;
 
+  for (let i = int81; i <= int82; i++) {
+    out8 += i + ' ';
+    document.querySelector('.out-8').innerHTML = out8;
+  }
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -142,8 +155,23 @@ document.querySelector('.b-8').onclick = t8;
 // 6 7 8
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл.
 
+let out9 = '';
 function t9() {
+  let int91 = +document.querySelector('.i-91').value;
+  let int92 = +document.querySelector('.i-92').value;
 
+  if (int91 <= int92) {
+    for (let i = int91; i <= int92; i++) {
+      out9 += i + ' ';
+      document.querySelector('.out-9').innerHTML = out9;
+    }
+  }
+  else {
+    for (let i = int92; i <= int91; i++) {
+      out9 += i + ' ';
+      document.querySelector('.out-9').innerHTML = out9;
+    }
+  }
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -153,8 +181,12 @@ document.querySelector('.b-9').onclick = t9;
 // Кнопка b-10 запускает функцию t10. Функция должна выводить в out-10 четные годы от 1950 до 2000 включительно.
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
+let out10 = '';
 function t10() {
-
+  for (let i = 1950; i <= 2000; i = i + 2) {
+    out10 += i + ' ';
+    document.querySelector('.out-10').innerHTML = out10;
+  }
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -167,9 +199,14 @@ document.querySelector('.b-10').onclick = t10;
 //     В результате должно получиться так:
 //     one 3 4 two
 
-
+let out11 = '';
 function t11() {
+  let div11 = document.querySelectorAll('.div-11');
 
+  for (let i = 0; i < div11.length; i++) {
+    out11 += div11[i].textContent + ' ';
+    document.querySelector('.out-11').innerHTML = out11;
+  }
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -182,7 +219,11 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
+  let div12 = document.querySelectorAll('.div-12');
 
+  for (let i = 0; i < div12.length; i++) {
+    div12[i].style.background = 'orange';
+  }
 }
 
 document.querySelector('.b-12').onclick = t12;
