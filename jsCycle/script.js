@@ -55,7 +55,7 @@ document.querySelector('button').onclick = () => {
 let out = '';
 for (let i = 0; i < 10; i++) {
   //document.querySelector('#out').innerHTML += i + ' ';
-  if (i == 6) continue;
+  //if (i == 6) continue;
   out += '***** <br>';
   // if (i == 6) break;
 }
