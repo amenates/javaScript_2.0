@@ -80,7 +80,7 @@ document.querySelector('.b-9').onclick = () => {
 // Task 10
 // Создайте input(color) и button - при нажатии на него окрашивайте div выбранным цветом.
 document.querySelector('.b-10').onclick = () => {
-  document.querySelector('.d-10').style.color = document.querySelector('.i-10').value;
+  document.querySelector('.d-10').style.backgroundColor = document.querySelector('.i-10').value;
 }
 
 // Task 11
