@@ -234,8 +234,15 @@ document.querySelector('.b-12').onclick = t12;
 // перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
+let out13 = '';
 function t13() {
+  let i13 = document.querySelectorAll('.i-13');
 
+  for (let i = 0; i < i13.length; i++) {
+    console.log(i13[i]);
+    i13[i].value;
+    console.log(i13[i].value);
+  }
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -246,9 +253,16 @@ document.querySelector('.b-13').onclick = t13;
 // перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 // вывести в out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
-
+let out14 = '';
 function t14() {
+  let i14 = document.querySelectorAll('.i-14');
 
+  for (let i = 0; i < i14.length; i++) {
+    if (i14[i].checked) {
+      out14 = i14[i].value;
+      document.querySelector('.out-14').innerHTML = out14;
+    }
+  }
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -258,8 +272,14 @@ document.querySelector('.b-14').onclick = t14;
 // 10 0 9 1 8 2 7 3 6 4 5 5 4 6 3 7 2 8 1 9 0 10
 // Для вывода использовать цикл. Разделитель пробел.
 
+let out15 = '';
+let j = 0;
 function t15() {
-
+  for (let i = 10; i >= 0; i--) {
+    out15 += i + ' ' + j + ' ';
+    j = j + 1;
+    document.querySelector('.out-15').innerHTML = out15;
+  }
 }
 
 document.querySelector('.b-15').onclick = t15;
