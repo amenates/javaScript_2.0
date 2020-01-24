@@ -96,7 +96,7 @@ function t6() {
   let int6 = +document.querySelector('.i-6').value;
 
   for (let i = 0; i < int6; i++) {
-    out6 += '****** ';
+    out6 += '******';
     document.querySelector('.out-6').innerHTML = out6;
   }
 }
@@ -234,14 +234,12 @@ document.querySelector('.b-12').onclick = t12;
 // перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
-let out13 = '';
+let x = 1;
 function t13() {
   let i13 = document.querySelectorAll('.i-13');
 
   for (let i = 0; i < i13.length; i++) {
-    console.log(i13[i]);
-    i13[i].value;
-    console.log(i13[i].value);
+    i13[i].value = x++;
   }
 }
 
@@ -277,7 +275,7 @@ let j = 0;
 function t15() {
   for (let i = 10; i >= 0; i--) {
     out15 += i + ' ' + j + ' ';
-    j = j + 1;
+    j++;
     document.querySelector('.out-15').innerHTML = out15;
   }
 }
