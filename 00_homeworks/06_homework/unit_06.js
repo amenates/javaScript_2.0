@@ -6,7 +6,14 @@
 // <p>где звездочки рисуются с помощью внутреннего цикла от 0 до 3, а _ с помощью внешнего.</p>
 
 function t1() {
+    let out1 = document.querySelector('.out-1');
 
+    for (let i = 0; i < 3; i++) {
+            for (let k = 0; k < 3; k++) {
+            out1.textContent += '*';
+        }
+        out1.textContent += '_';
+    }
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -23,7 +30,18 @@ document.querySelector('.b-1').onclick = t1;
 // </pre>
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит цифры и перенос строки br, , второй звездочки, знак подчеркивания и знак переноса.</p>
 function t2() {
+    let out2 = document.querySelector('.out-2');
 
+    for (let i = 1; i <= 3; i++) {
+        out2.innerHTML += i;
+        out2.innerHTML += '<br>';
+
+        for (let k = 0; k < 3; k++) {
+            out2.innerHTML += '*_';
+            //out2.innerHTML += '_';
+        }
+        out2.innerHTML += '<br>';
+    }
 }
 
 document.querySelector('.b-2').onclick = t2;
@@ -39,7 +57,15 @@ document.querySelector('.b-2').onclick = t2;
 // </pre>
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит перенос строки br,  внутренний -  звездочки, знак подчеркивания.</p>
 function t3() {
+    let out3 = document.querySelector('.out-3');
 
+    for (let i = 0; i < 4; i++) {
+        for (let k = 0; k < 3; k++) {
+            out3.innerHTML += '*_';
+            // out3.innerHTML += '_';
+        }
+        out3.innerHTML += '<br>';
+    }
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -51,7 +77,18 @@ document.querySelector('.b-3').onclick = t3;
 // </pre>
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит числа на четных позициях (от 0 до 10) внутренний цикл  - числа на нечетных позициях  (от 10 до 0).</p>
 function t4() {
+    let out4 = document.querySelector('.out-4');
 
+    for (let i = 0; i <= 10; i++) {
+        out4.innerHTML += i;
+        out4.innerHTML += '_';
+
+        for (let k = 10; k >= 0; k--) {
+            out4.innerHTML += i + k;
+            //out4.innerHTML += '_';
+        }
+
+    }
 }
 
 document.querySelector('.b-4').onclick = t4;
@@ -66,7 +103,23 @@ document.querySelector('.b-4').onclick = t4;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл от 0 до 6 выводит либо 0 либо 1.</p>
 function t5() {
+    let out5 = document.querySelector('.out-5');
 
+    for (let i = 0; i < 3; i++) {
+        for (let k = 0; k < 6; k++) {
+            // if (k == 1) {
+            //     out5.innerHTML += '1';
+            //
+            // }
+            // else {
+            //     out5.innerHTML += '0';
+            //
+            // }
+            out5.innerHTML += '1';
+            out5.innerHTML += '0';
+        }
+        out5.innerHTML += '<br>';
+    }
 }
 
 document.querySelector('.b-5').onclick = t5;
