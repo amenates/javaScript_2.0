@@ -134,15 +134,15 @@ let s8 = document.querySelector('.s-8');
 let out8 = document.querySelector('.out-8');
 
 function f8(){
-  switch (+s8.value) {
-    case 1:
-      out8.textContent = 'One';
+  switch (s8.value) {
+    case '1':
+      out8.textContent = 'one';
       break;
-    case 2:
-      out8.textContent = 'Two';
+    case '2':
+      out8.textContent = 'two';
       break;
-    case 3:
-      out8.textContent = 'Three';
+    case '3':
+      out8.textContent = 'three';
       break;
   }
 }
