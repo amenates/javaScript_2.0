@@ -76,18 +76,13 @@ document.querySelector('.b-3').onclick = t3;
 // 0_10_1_9_2_8_3_7_4_6_5_5_6_4_7_3_8_2_9_1_10_0_
 // </pre>
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит числа на четных позициях (от 0 до 10) внутренний цикл  - числа на нечетных позициях  (от 10 до 0).</p>
+
+let num4 = 10;
 function t4() {
-    let out4 = document.querySelector('.out-4');
-
     for (let i = 0; i <= 10; i++) {
-        out4.innerHTML += i;
-        out4.innerHTML += '_';
-
-        for (let k = 10; k >= 0; k--) {
-            out4.innerHTML += i + k;
-            //out4.innerHTML += '_';
-        }
-
+        let out4 = document.querySelector('.out-4');
+        out4.innerHTML += `${i}_${num4}_`;
+        num4--;
     }
 }
 
@@ -107,16 +102,13 @@ function t5() {
 
     for (let i = 0; i < 3; i++) {
         for (let k = 0; k < 6; k++) {
-            // if (k == 1) {
-            //     out5.innerHTML += '1';
-            //
-            // }
-            // else {
-            //     out5.innerHTML += '0';
-            //
-            // }
-            out5.innerHTML += '1';
-            out5.innerHTML += '0';
+            let num5 = k % 2;
+            if (num5 == 0) {
+                out5.innerHTML += 1;
+            }
+            else {
+                out5.innerHTML += 0;
+            }
         }
         out5.innerHTML += '<br>';
     }
@@ -150,6 +142,14 @@ document.querySelector('.b-6').onclick = t6;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл запускается от нуля до i и рисует звездочку.</p>
 function t7() {
+    let out7 = document.querySelector('.out-7');
+
+    for (let i = 0; i <= 4; i++) {
+        for (let k = 0; k < i; k++) {
+            out7.innerHTML += '*';
+        }
+        out7.innerHTML += '<br>';
+    }
 
 }
 
@@ -167,7 +167,14 @@ document.querySelector('.b-7').onclick = t7;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл рисует звездочки. </p>
 function t8() {
+    let out8 = document.querySelector('.out-8');
 
+    for (let i = 0; i <= 5; i++) {
+        for (let k = 5; k > i; k--) {
+            out8.innerHTML += '*';
+        }
+        out8.innerHTML += '<br>';
+    }
 }
 
 document.querySelector('.b-8').onclick = t8;
