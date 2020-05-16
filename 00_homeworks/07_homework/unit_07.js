@@ -3,7 +3,7 @@
 
 let a1 = 8;
 function t1() {
-
+    document.querySelector('.out-1').textContent = a1;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -15,8 +15,7 @@ document.querySelector('.b-1').onclick = t1;
 
 let a2 = 8;
 function t2() {
-
-    //return
+    return a2;
 }
 
 document.querySelector('.b-2').onclick = function () {
@@ -27,7 +26,7 @@ document.querySelector('.b-2').onclick = function () {
 // Наша предыдущая функция, сильно все еще зависима от внешних переменных.Давайте сделаем ее более универсальной.Пусть функция t3 принимает 2 параметра и выводит их произведение.Допишите код функции так, чтобы она возвращала произведение двух чисел, переданных ей в качестве параметра a, b.Протестируем функцию на двух примерах, с помощью кнопок b-3-1 и b-3-2.
 
 function t3(a, b) {
-
+    return a + b;
 }
 
 document.querySelector('.b-3-1').onclick = function () {
@@ -38,14 +37,14 @@ document.querySelector('.b-3-2').onclick = function () {
 }
 
 // Task 4
-// Напишите функцию t4 которая принимает ваш год рождения  и вычисляет ваш возраст. 
+// Напишите функцию t4 которая принимает ваш год рождения и вычисляет ваш возраст.
 
 function t4(year) {
-
+    return 2020 - year;
 }
 
 document.querySelector('.b-4').onclick = function () {
-    document.querySelector('.out-4').textContent = t4(1983);
+    document.querySelector('.out-4').textContent = t4(1989);
 }
 
 
@@ -54,11 +53,11 @@ document.querySelector('.b-4').onclick = function () {
 
 
 function t5(yourName) {
-
+    return `Hello ${yourName}`;
 }
 
 document.querySelector('.b-5').onclick = function () {
-    document.querySelector('.out-5').textContent = t5('Alex');
+    document.querySelector('.out-5').textContent = t5('Julia');
 }
 
 
@@ -67,7 +66,7 @@ document.querySelector('.b-5').onclick = function () {
 // Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго принятого параметра. 
 
 function t6(a, b) {
-
+    return Math.floor(Math.random() * (b - a + 1) + a);
 }
 
 document.querySelector('.b-6').onclick = function () {
