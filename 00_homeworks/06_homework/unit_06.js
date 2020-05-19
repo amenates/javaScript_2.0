@@ -236,10 +236,10 @@ function t10() {
         for (let k = 1; k <= 10; k++) {
             if (i == 0 && k < 10) {
                 out10.innerHTML += '0';
-                out10.innerHTML += i * 10 + k + ' ';
+                out10.innerHTML += `${i * 10 + k} `;
             }
             else {
-                out10.innerHTML += i * 10 + k + ' ';
+                out10.innerHTML += `${i * 10 + k} `;
             }
         }
         out10.innerHTML += '<br>';
