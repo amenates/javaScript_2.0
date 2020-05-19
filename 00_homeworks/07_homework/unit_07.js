@@ -51,7 +51,6 @@ document.querySelector('.b-4').onclick = function () {
 // Task 5
 // Напишите функцию t5, которая принимает ваше имя в качестве параметра и возвращает строку Hello name, где name - принятое в качестве параметра имя.
 
-
 function t5(yourName) {
     return `Hello ${yourName}`;
 }
@@ -59,7 +58,6 @@ function t5(yourName) {
 document.querySelector('.b-5').onclick = function () {
     document.querySelector('.out-5').textContent = t5('Julia');
 }
-
 
 
 // Task 6
@@ -78,7 +76,7 @@ document.querySelector('.b-6').onclick = function () {
 // Напишите функцию t7, которая возвращает случайный цвет в формате rgb(x, y, z)(строка).Где x, y, z - случайные числа в диапазоне[0, 255]. 
 
 function t7() {
-    return `rgb(${t6(0,255)}`;
+    return `rgb(${t6(0,255)} ${t6(0, 255)} ${t6(0, 255)}`;
 }
 
 document.querySelector('.b-7').onclick = function () {
