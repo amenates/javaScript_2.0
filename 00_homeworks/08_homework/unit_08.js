@@ -5,7 +5,7 @@
 
 function t1() {
     let out1 = '';
-    let a = 0;
+    let a = 1;
 
     while (a <= 50) {
         out1 += `${a} `;
@@ -78,7 +78,20 @@ document.querySelector('.b-4').onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла  while.
 
 function t5() {
+    let out5 = '';
+    let a = 1;
 
+    while (a <= 17) {
+        let num = a % 2;
+        if (num == 0) {
+            out5 += `${a}_**`;
+        }
+        else {
+            out5 += `${a}_*`;
+        }
+        a++;
+    }
+    document.querySelector('.out-5').textContent = out5;
 }
 
 document.querySelector('.b-5').onclick = t5;
@@ -93,7 +106,20 @@ document.querySelector('.b-5').onclick = t5;
 // Количество строк (итераций, повторений) цикла  while вводит пользователь в i-6.
 
 function t6() {
+    let out6 = '';
+    let int6 = document.querySelector('.i-6').value;
+    let star = 0; // рисует звездочки
+    let str = 0; // рисует строки
 
+    while (str < int6) {
+        while (star < 6) {
+            out6 += '*';
+            star++;
+        }
+        out6 += '<br>';
+        str++;
+    }
+    document.querySelector('.out-6').innerHTML = out6;
 }
 
 document.querySelector('.b-6').onclick = t6;
