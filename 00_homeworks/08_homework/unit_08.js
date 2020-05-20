@@ -107,11 +107,11 @@ document.querySelector('.b-5').onclick = t5;
 
 function t6() {
     let out6 = '';
-    let int6 = document.querySelector('.i-6').value;
-    let star = 0; // рисует звездочки
-    let str = 0; // рисует строки
+    let int6 = +document.querySelector('.i-6').value;
+    let str = 0;
 
     while (str < int6) {
+        let star = 0;
         while (star < 6) {
             out6 += '*';
             star++;
@@ -133,7 +133,15 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла  while.
 
 function t7() {
-// kokfp
+    let out7 = '';
+    let int7 = +document.querySelector('.i-7').value;
+    let a = 0;
+
+    while (a <= int7) {
+        out7 += `${int7} `;
+        int7--;
+    }
+    document.querySelector('.out-7').textContent = out7;
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -148,7 +156,15 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла  while.
 
 function t8() {
+    let out8 = '';
+    let int81 = +document.querySelector('.i-81').value; // first number
+    let int82 = +document.querySelector('.i-82').value; // second number
 
+    while (int81 <= int82) {
+        out8 += `${int81} `;
+        int81++;
+    }
+    document.querySelector('.out-8').textContent = out8;
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -164,7 +180,23 @@ document.querySelector('.b-8').onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл  while.
 
 function t9() {
+    let out9 = '';
+    let int91 = +document.querySelector('.i-91').value;
+    let int92 = +document.querySelector('.i-92').value;
 
+    if (int91 <= int92) {
+        while (int91 <= int92) {
+            out9 += `${int91} `;
+            int91++;
+        }
+    }
+    else {
+        while (int92 <= int91) {
+            out9 += `${int92} `;
+            int92++;
+        }
+    }
+    document.querySelector('.out-9').innerHTML = out9;
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -175,7 +207,14 @@ document.querySelector('.b-9').onclick = t9;
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
 function t10() {
+    let out10 = '';
+    let year = 1950;
 
+    while (year <= 2000) {
+        out10 += `${year} `;
+        year = year + 2;
+    }
+    document.querySelector('.out-10').textContent = out10;
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -190,7 +229,15 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
+    let out11 = '';
+    let div11 = document.querySelectorAll('.div-11');
+    let a = 0;
 
+    while (a < div11.length) {
+        out11 += div11[a].textContent + ' ';
+        a++;
+    }
+    document.querySelector('.out-11').textContent = out11;
 }
 
 document.querySelector('.b-11').onclick = t11;
