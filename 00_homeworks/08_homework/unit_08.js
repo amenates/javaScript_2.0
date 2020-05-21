@@ -227,7 +227,6 @@ document.querySelector('.b-10').onclick = t10;
 //     В результате должно получиться так:
 //     one 3 4 two
 
-
 function t11() {
     let out11 = '';
     let div11 = document.querySelectorAll('.div-11');
@@ -248,9 +247,16 @@ document.querySelector('.b-11').onclick = t11;
 // перебрать их с помощью цикла  while. Обращение к div выглядит так elem[i]
 // применить к каждому elem[i].style.background = ‘orange’
 
-
 function t12() {
+    let out12 = '';
+    let div12 = document.querySelectorAll('.div-12');
+    let a = 0;
 
+    while (a < div12.length) {
+        out12 += div12[a].style.background = 'orange';
+        a++;
+    }
+    document.querySelector('.out-12').textContent = out12;
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -262,7 +268,14 @@ document.querySelector('.b-12').onclick = t12;
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
 function t13() {
+    let int13 = document.querySelectorAll('.i-13');
+    let a = 0;
+    let x = 1;
 
+    while (a < int13.length) {
+        int13[a].value = x++;
+        a++;
+    }
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -273,9 +286,18 @@ document.querySelector('.b-13').onclick = t13;
 // перебрать их с помощью цикла  while. Обращение к элементу выглядит так elem[i]
 // вывести в out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
-
 function t14() {
+    let out14 = '';
+    let int14 = document.querySelectorAll('.i-14');
+    let a = 0;
 
+    while (a < int14.length) {
+        if (int14[a].checked) {
+            out14 += int14[a].value;
+        }
+        a++;
+    }
+    document.querySelector('.out-14').textContent = out14;
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -286,7 +308,17 @@ document.querySelector('.b-14').onclick = t14;
 // Для вывода использовать цикл  while. Разделитель пробел.
 
 function t15() {
+    let out15 = '';
+    let a = 10;
+    let b = 0;
 
+    while (a >= 0) {
+        out15 += a + ' ';
+        out15 += b + ' ';
+        b++;
+        a--;
+    }
+    document.querySelector('.out-15').textContent = out15;
 }
 
 document.querySelector('.b-15').onclick = t15;
