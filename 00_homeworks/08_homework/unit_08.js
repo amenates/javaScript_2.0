@@ -313,8 +313,8 @@ function t15() {
     let b = 0;
 
     while (a >= 0) {
-        out15 += a + ' ';
-        out15 += b + ' ';
+        out15 += `${a} `;
+        out15 += `${b} `;
         b++;
         a--;
     }
