@@ -1,9 +1,10 @@
 //  Task 1
 // Добавьте кнопку .b-1, которая запускает функцию f1. Функция присваивает блоку .out-1 ширину 200px, высоту 40px.
 
-
+const out1 = document.querySelector('.out-1');
 function f1() {
-
+    out1.style.width = '200px';
+    out1.style.height = '40px';
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -11,8 +12,9 @@ document.querySelector('.b-1').onclick = f1;
 //  Task 2
 // По нажатию кнопки b-2 запускайте функцию f2, которая присваивает блоку out-2 класс .bg-2.
 
+const out2 = document.querySelector('.out-2');
 function f2() {
-
+    out2.classList.add('bg-2');
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -21,8 +23,9 @@ document.querySelector('.b-2').onclick = f2;
 //  Task 3
 // По нажатию кнопки b-3 запускайте функцию f3, которая удаляет у блока out-3 класс .bg-3.
 
+const out3 = document.querySelector('.out-3');
 function f3() {
-
+    out3.classList.remove('bg-3');
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -30,9 +33,9 @@ document.querySelector('.b-3').onclick = f3;
 //  Task 4
 // По нажатию кнопки b-4 запускайте функцию f4, которая делает toggle класса bg-4 для блока out-4.
 
-
+const out4 = document.querySelector('.out-4');
 function f4() {
-
+    out4.classList.toggle('bg-4');
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -41,8 +44,14 @@ document.querySelector('.b-4').onclick = f4;
 //  Task 5
 // По нажатию b-5 запускайте функцию f5, которая проверяет наличие класса bg-4 у блока out-4 (да, именно bg-4 у out-4 ). Результат - true или false, выводите в out-5.
 
+const out5 = document.querySelector('.out-5');
 function f5() {
-
+    if (out4.classList.contains('bg-4')) {
+        out5.textContent = 'true';
+    }
+    else {
+        out5.textContent = 'false';
+    }
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -51,8 +60,10 @@ document.querySelector('.b-5').onclick = f5;
 //  Task 6
 // По нажатию b-6 запускайте функцию f6, которая выводит в out-6 количество параграфов с классом p-6.
 
+const out6 = document.querySelector('.out-6');
 function f6() {
-
+    let a = document.getElementsByClassName('p-6').length;
+    out6.textContent = a;
 }
 
 document.querySelector('.b-6').onclick = f6;
