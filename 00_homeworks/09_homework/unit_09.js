@@ -109,24 +109,24 @@ function f9() {
     this.classList.toggle('bg-9');
 }
 
-let div9 = document.querySelectorAll('.out-9');
+let out9 = document.querySelectorAll('.out-9');
 
-for (let i = 0; i < div9.length; i++) {
-    div9[i].onclick = f9;
+for (let i = 0; i < out9.length; i++) {
+    out9[i].onclick = f9;
 }
 
 
 //  Task 10
 // Усложним предыдущие задачи. С помощью цикла повесьте на блоки out-10 событие клик. По клику должна выполняться функция f10. Функция, должна делать toggle класса bg-10 тому out-10 на котором кликнули.
 
-let div10 = document.querySelectorAll('.out-10');
+let out10 = document.querySelectorAll('.out-10');
 
 function f10() {
     this.classList.toggle('bg-10');
 }
 
-for (let i = 0; i < div10.length; i++) {
-    div10[i].onclick = f10;
+for (let i = 0; i < out10.length; i++) {
+    out10[i].onclick = f10;
 }
 
 
@@ -136,9 +136,9 @@ for (let i = 0; i < div10.length; i++) {
 let out11 = document.querySelector('.out-11');
 
 function f11() {
-    let out111 = document.createElement('div-111');
-    out111.textContent = '25';
-    out11.append(out111);
+    let div11 = document.createElement('div');
+    div11.textContent = '25';
+    out11.append(div11);
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -149,10 +149,10 @@ document.querySelector('.b-11').onclick = f11;
 let out12 = document.querySelector('.out-12');
 
 function f12() {
-    let out121 = document.createElement('div-121');
-    out121.classList.add('bg-12');
-    out121.textContent = '12';
-    out12.append(out121);
+    let div12 = document.createElement('div');
+    div12.classList.add('bg-12');
+    div12.textContent = '12';
+    out12.append(div12);
 }
 
 document.querySelector('.b-12').onclick = f12;
@@ -163,11 +163,11 @@ document.querySelector('.b-12').onclick = f12;
 let out13 = document.querySelector('.out-13');
 
 function f13() {
-    let out131 = document.createElement('pushMe');
-    out131.classList.add('bg-13');
-    out131.textContent = 'pushMe';
-    out131.onclick = f13_1;
-    out13.append(out131);
+    let div13 = document.createElement('div');
+    div13.classList.add('bg-13');
+    div13.textContent = 'pushMe';
+    div13.onclick = f13_1;
+    out13.append(div13);
 }
 
 function f13_1() {
@@ -183,10 +183,10 @@ document.querySelector('.b-13').onclick = f13;
 let out14 = document.querySelector('.out-14');
 
 function f14() {
-    let div141 = document.createElement('div');
-    div141.classList.add('bg-14');
-    div141.textContent = '14';
-    out14.prepend(div141);
+    let div14 = document.createElement('div');
+    div14.classList.add('bg-14');
+    div14.textContent = '14';
+    out14.prepend(div14);
 }
 
 document.querySelector('.b-14').onclick = f14;
@@ -197,10 +197,10 @@ document.querySelector('.b-14').onclick = f14;
 let out15 = document.querySelector('.out-15');
 
 function f15() {
-    let div151 = document.createElement('div');
-    div151.classList.add('bg-15');
-    div151.textContent = '15';
-    out15.before(div151);
+    let div15 = document.createElement('div');
+    div15.classList.add('bg-15');
+    div15.textContent = '15';
+    out15.before(div15);
 }
 
 document.querySelector('.b-15').onclick = f15;
@@ -211,10 +211,10 @@ document.querySelector('.b-15').onclick = f15;
 let out16 = document.querySelector('.out-16');
 
 function f16() {
-    let div161 = document.createElement('div');
-    div161.classList.add('bg-16');
-    div161.textContent = '16';
-    out16.after(div161);
+    let div16 = document.createElement('div');
+    div16.classList.add('bg-16');
+    div16.textContent = '16';
+    out16.after(div16);
 }
 
 document.querySelector('.b-16').onclick = f16;
