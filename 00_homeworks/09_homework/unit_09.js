@@ -180,9 +180,13 @@ document.querySelector('.b-13').onclick = f13;
 //  Task 14
 // Добавьте кнопку .b-14, которая запускает функцию f14. Функция создает через createElement div c текстом 14 и добавляет ему класс bg-14. Созданный div добавляется в out-14 с помощью prepend.
 
+let out14 = document.querySelector('.out-14');
 
 function f14() {
-
+    let div141 = document.createElement('div');
+    div141.classList.add('bg-14');
+    div141.textContent = '14';
+    out14.prepend(div141);
 }
 
 document.querySelector('.b-14').onclick = f14;
@@ -190,8 +194,13 @@ document.querySelector('.b-14').onclick = f14;
 //  Task 15
 // Добавьте кнопку .b-15, которая запускает функцию f15. Функция создает через createElement div c текстом 15 и добавляет ему класс bg-15. Созданный div добавляется в out-15 с помощью before.
 
-function f15() {
+let out15 = document.querySelector('.out-15');
 
+function f15() {
+    let div151 = document.createElement('div');
+    div151.classList.add('bg-15');
+    div151.textContent = '15';
+    out15.before(div151);
 }
 
 document.querySelector('.b-15').onclick = f15;
@@ -199,8 +208,13 @@ document.querySelector('.b-15').onclick = f15;
 //  Task 16
 // Добавьте кнопку .b-16, которая запускает функцию f16. Функция создает через createElement div c текстом 16 и добавляет ему класс bg-16. Созданный div добавляется в out-16 с помощью after.
 
-function f16() {
+let out16 = document.querySelector('.out-16');
 
+function f16() {
+    let div161 = document.createElement('div');
+    div161.classList.add('bg-16');
+    div161.textContent = '16';
+    out16.after(div161);
 }
 
 document.querySelector('.b-16').onclick = f16;
