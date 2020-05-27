@@ -1,4 +1,4 @@
-let int = '()((';
+let int = ['()(('];
 
 console.log(typeof int); // узнаем тип переменной
 console.log(int.length); // узнаем длинну строки

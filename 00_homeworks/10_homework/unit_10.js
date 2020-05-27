@@ -1,10 +1,11 @@
 // Task 1
 //Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию кнопки b-1
 
-// let ar1 = // переменную обьявляем здесь!!!!
+let ar1 = ['hello', true, 34, 57, 'world', false, -1, 56, -34, 'Lorem'];
 
 function f1() {
-    //ваш_элемент.innerHTML = ar1; // да так можно выводить!!!!
+    let out1 = document.querySelector('.out-1');
+    out1.innerHTML = ar1;
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -12,14 +13,14 @@ document.querySelector('.b-1').onclick = f1;
 // Task 2
 //Создайте массив ar2 содержащий строки, числа, булевы значения. Выведите его в div.out-2. Используйте шаблон вывода из кода в JS. Вывод - по нажатию кнопки b-2
 
-// let ar2 = // переменную обьявляем здесь!!!!
+let ar2 = ['hello', true, 34, 57, 'world', false, -1, 56, -34, 'Lorem'];
 
 function f2() {
-    // let out = '';
-    // for (let i = 0; i < ar2.length; i++) {
-    //     out +=arr2[i]+' ';
-    // }
-    // document.querySelector('.out-2').innerHTML = out;
+    let out2 = '';
+    for (let i = 0; i < ar2.length; i++) {
+         out2 += `${ar2[i]} `;
+    }
+    document.querySelector('.out-2').innerHTML = out2;
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -30,9 +31,10 @@ document.querySelector('.b-2').onclick = f2;
 // Вывод в out-3
 // Тест допустим массив [1,2,3] вывод - 3
 
-// let ar3 =  // переменную обьявляем здесь!!!!
+let ar3 = [1, 3, 5, 78, 100, -45, 'hello'];
 
 function f3() {
+    document.querySelector('.out-3').innerHTML = ar3.length;
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -44,9 +46,10 @@ document.querySelector('.b-3').onclick = f3;
 // Вывод в out-4
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 1 4 9
 
-// let ar4 =  // переменную обьявляем эту здесь!!!!
+let ar4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function f4() {
+    document.querySelector('.out-4').innerHTML += `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -58,9 +61,10 @@ document.querySelector('.b-4').onclick = f4;
 // Вывод в out-5
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
-// let ar5 =
+let ar5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function f5() {
+    document.querySelector('.out-5').innerHTML = ar5[0] + ar5[2] + ar5[3];
 }
 
 document.querySelector('.b-5').onclick = f5;
