@@ -18,3 +18,21 @@ document.querySelector('.out').textContent += out;
 // input принимает скобочки, и выводит правильно не правильно ввели
 // запуск по кнопке
 // выод на страницу
+
+// let out1 = '';
+//
+// function f1 () {
+//     let int1 = document.querySelector('.int-1').value;
+//     let count1 = 0;
+//
+//     for (let i = 0; i < int1.length; i++) {
+//         if (int1[i] == '(') count1++; // увеличиваем на единицу
+//         if (int1[i] == ')') count1--; // уменьшает на единицу
+//         if (count1 < 0) break;
+//     }
+//     if (count1 != 0) out1 = `не правильно`;
+//     else out1 = `правильно`;
+//     document.querySelector('.out-1').textContent += out1;
+// }
+//
+// document.querySelector('.b-1').onclick = f1;
