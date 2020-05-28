@@ -158,7 +158,6 @@ function f9() {
 
     document.querySelector('.out-9').innerHTML = out9;
 }
-
 document.querySelector('.b-9').onclick = f9;
 
 // Task 10
