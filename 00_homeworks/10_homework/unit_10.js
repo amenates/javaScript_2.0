@@ -75,9 +75,16 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
+let ar6 = ['Julia', 'Aries', 1, 4];
 
 function f6() {
+    let out6 = '';
+
+    for (let i = 0; i < ar6.length; i++) {
+        out6 += `${ar6[i]} `;
+    }
+
+    document.querySelector('.out-6').innerHTML = out6;
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -90,7 +97,18 @@ document.querySelector('.b-6').onclick = f6;
 
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
+ar7[5] = 'italy';
+ar7[6] = 'turkey';
+ar7[7] = 'vietnam';
+
 function f7() {
+    let out7 = '';
+
+    for (let i = 0; i < ar7.length; i++) {
+        out7 += `${ar7[i]} `;
+    }
+
+    document.querySelector('.out-7').innerHTML = out7;
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -104,7 +122,21 @@ document.querySelector('.b-7').onclick = f7;
 
 let ar8 = [];
 
+ar8[3] = 3.14;
+ar8[4] = 17;
+ar8[6] = 5;
+
 function f8() {
+    let out8 = '';
+    let out81 = '';
+
+    for (let i = 0; i < ar8.length; i++) {
+        out8 += `${ar8[i]} - `;
+    }
+
+    out81 += ar8.length;
+    document.querySelector('.out-8').innerHTML = out8;
+    document.querySelector('.out-8-1').innerHTML = out81;
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -118,6 +150,13 @@ document.querySelector('.b-8').onclick = f8;
 let ar9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
+    let out9 = '';
+
+    for (let i = 0; i < ar9.length; i++) {
+        out9 = ar9[i];
+    }
+
+    document.querySelector('.out-9').innerHTML = out9;
 }
 
 document.querySelector('.b-9').onclick = f9;
