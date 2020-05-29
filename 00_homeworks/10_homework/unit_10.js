@@ -170,6 +170,7 @@ document.querySelector('.b-9').onclick = f9;
 let ar10 = [100, 200, 300, 400, 700, 121];
 
 function f10() {
+    document.querySelector('.out-10').innerHTML = ar10[1] + ar10[ar10.length - 1];
 }
 
 document.querySelector('.b-10').onclick = f10;
@@ -185,7 +186,17 @@ document.querySelector('.b-10').onclick = f10;
 let ar11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
+    let out11 = '';
+    let temp11 = ar11[2];
 
+    ar11[2] = ar11[4];
+    ar11[4] = temp11;
+
+    for (let i = 0; i < ar11.length; i++) {
+        out11 += `${ar11[i]} `;
+    }
+
+    document.querySelector('.out-11').innerHTML = out11;
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -200,7 +211,17 @@ document.querySelector('.b-11').onclick = f11;
 let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
 function f12() {
+    let out12 = '';
+    let temp12 = ar12[0];
 
+    ar12[0] = ar12[ar12.length - 1];
+    ar12[ar12.length - 1] = temp12;
+
+    for (let i = 0; i < ar12.length; i++) {
+        out12 += `${ar12[i]} `;
+    }
+
+    document.querySelector('.out-12').innerHTML = out12;
 }
 
 document.querySelector('.b-12').onclick = f12;
@@ -217,7 +238,15 @@ document.querySelector('.b-12').onclick = f12;
 let ar13 = ['test', 'west', 'list', 'class', 'best'];
 
 function f13() {
+    let index13 = 0;
+    let out13 = '';
 
+    for (let i = 0; i < ar13.length; i++) {
+        out13 += `${index13} ${ar13[i]} `;
+        index13++;
+    }
+
+    document.querySelector('.out-13').innerHTML = out13;
 }
 
 document.querySelector('.b-13').onclick = f13;
