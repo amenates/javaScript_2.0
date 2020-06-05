@@ -50,7 +50,7 @@ document.querySelector('button').onclick = () => {
       console.log(r[i].value);
     }
   }
-}
+};
 
 let out = '';
 for (let i = 0; i < 10; i++) {
