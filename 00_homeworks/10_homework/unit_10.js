@@ -261,6 +261,13 @@ document.querySelector('.b-13').onclick = f13;
 let ar14 = [1, 2, 3, 'hello', 66];
 
 function f14() {
+    let out14 = '';
+
+    for (let i = (ar14.length - 1); i >= 0 ; i--) {
+        out14 += `${ar14[i]} `;
+    }
+
+    document.querySelector('.out-14').innerHTML = out14;
 
 }
 
@@ -275,6 +282,14 @@ document.querySelector('.b-14').onclick = f14;
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
+    let out15 = '';
+
+    for (let i = 0; i < ar15.length; i++) {
+        if (ar15[i] > 0) {
+            out15 += `${ar15[i]} `;
+        }
+    }
+    document.querySelector('.out-15').innerHTML = out15;
 
 }
 
@@ -287,11 +302,26 @@ document.querySelector('.b-15').onclick = f15;
 // Вывод в out-16
 
 let ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-let ar16_odd = [];
-let ar16_even = [];
+let ar16Odd = [];
+let ar16Even = [];
 
 function f16() {
+    let outEven = ''; // четное
+    let outOdd = ''; // не четное
 
+    for (let i = 0; i < ar16.length; i++) {
+        if ((ar16[i] % 2) == 0) {
+            ar16Even = ar16[i];
+            outEven += `${ar16Even} `;
+        }
+        else {
+            ar16Odd = ar16[i];
+            outOdd += `${ar16Odd} `;
+        }
+    }
+
+    document.querySelector('.out-16-even').innerHTML = outEven;
+    document.querySelector('.out-16-odd').innerHTML = outOdd;
 }
 
 document.querySelector('.b-16').onclick = f16;
@@ -304,8 +334,18 @@ document.querySelector('.b-16').onclick = f16;
 
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
-function f17() {
 
+function f17() {
+    let out17 = '';
+
+    for (let i = 0; i < ar17.length; i++) {
+        if (ar17[i] > 3) {
+            let counter17 = [ar17[i]];
+            console.log(counter17);
+            //console.log(counter17.length);
+        }
+// counter17.lenght
+    }
 }
 
 document.querySelector('.b-17').onclick = f17;
