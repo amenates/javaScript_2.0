@@ -4,8 +4,7 @@ let a = fruits.indexOf("Mango");
 
 console.log(a);
 
-
-let indices = [];
+// ---------------------------------------------------------
 let array = ['a', 'b', 'a', 'c', 'a', 'd'];
 let element = 'a';
 let idx = array.indexOf(element);
