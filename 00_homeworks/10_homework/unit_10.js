@@ -131,7 +131,7 @@ function f8() {
     let out81 = '';
 
     for (let i = 0; i < ar8.length; i++) {
-        out8 += `${ar8[i]} - `;
+        out8 += `${ar8[i]}-`;
     }
 
     out81 += ar8.length;
