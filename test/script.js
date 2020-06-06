@@ -1,4 +1,4 @@
-// метод array.indexOf - выводит индекс массива, пример:
+// метод arrays.indexOf - выводит индекс массива, пример:
 let fruits = ["Banana", "Orange", "Apple", "Mango"];
 let a = fruits.indexOf("Mango");
 
