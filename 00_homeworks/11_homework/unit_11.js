@@ -12,9 +12,7 @@ function showArr(domElem, arr) {
 let d1 = [33, 'best', 66, 'best'];
 
 function f1() {
-    /**
-     * ваш код здесь
-     */
+    d1.push(document.querySelector('.i-1').value);
     showArr('.out-1', d1);
 }
 
@@ -25,7 +23,7 @@ document.querySelector('.b-1').onclick = f1;
 // функция выполняется при нажатии кнопки b-2
 
 function f2() {
-
+    d1.pop();
     showArr('.out-2', d1);
 }
 
@@ -36,7 +34,7 @@ document.querySelector('.b-2').onclick = f2;
 // функция выполняется при нажатии кнопки b-3
 
 function f3() {
-
+    d1.shift();
     showArr('.out-3', d1);
 }
 
@@ -48,7 +46,7 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
-
+    d1.push(document.querySelector('.i-4').value);
     showArr('.out-4', d1);
 }
 
