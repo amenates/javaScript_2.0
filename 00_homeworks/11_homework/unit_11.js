@@ -57,7 +57,7 @@ document.querySelector('.b-4').onclick = f4;
 // функция выполняется при нажатии кнопки b-5
 
 function f5() {
-
+    d1.unshift(document.querySelector('.i-5').value);
     showArr('.out-5', d1);
 }
 
@@ -72,7 +72,7 @@ document.querySelector('.b-5').onclick = f5;
 let d6 = ['test', 5, 12];
 
 function f6() {
-
+    d6[d6.length] = document.querySelector('.i-6').value;
     showArr('.out-6', d6);
 }
 
@@ -87,7 +87,6 @@ document.querySelector('.b-6').onclick = f6;
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
-
     showArr('.out-7', d7);
 }
 
@@ -102,7 +101,7 @@ document.querySelector('.b-7').onclick = f7;
 let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
-
+    d8 = document.querySelector('.i-8').value;
     showArr('.out-8', d8);
 }
 
