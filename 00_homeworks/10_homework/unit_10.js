@@ -334,18 +334,17 @@ document.querySelector('.b-16').onclick = f16;
 
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
-
 function f17() {
     let out17 = '';
+    let counter;
 
     for (let i = 0; i < ar17.length; i++) {
         if (ar17[i] > 3) {
-            let counter17 = [ar17[i]];
-            console.log(counter17);
-            //console.log(counter17.length);
+            counter = [ar17[i], ar17[i]];
+            out17 = counter.length;
         }
-// counter17.lenght
     }
+    document.querySelector('.out-17').innerHTML = out17;
 }
 
 document.querySelector('.b-17').onclick = f17;
@@ -360,7 +359,16 @@ document.querySelector('.b-17').onclick = f17;
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
 
 function f18() {
+    let out18 = '';
+    let max = ar18[0];
 
+    for (let i = 0; i < ar18.length; i++) {
+        if (max < ar18[i]) {
+            max = ar18[i];
+            out18 = max;
+        }
+    }
+    document.querySelector('.out-18').innerHTML = out18;
 }
 
 document.querySelector('.b-18').onclick = f18;
@@ -375,7 +383,18 @@ document.querySelector('.b-18').onclick = f18;
 let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
 
 function f19() {
+    let out19 = '';
+    let min = ar19[0];
+    let temp19 = 0;
 
+    for (let i = 0; i < ar19.length; i++) {
+        if (min > ar19[i]) {
+            min = ar19[i];
+            temp19 = ar19.indexOf(min);
+            out19 = temp19;
+        }
+    }
+    document.querySelector('.out-19').innerHTML = out19;
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -389,7 +408,14 @@ document.querySelector('.b-19').onclick = f19;
 let ar20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
+    let out20 = '';
+    let sum = 0;
 
+    for (let i = 0; i < ar20.length; i++) {
+        sum = sum + ar20[i];
+        out20 = sum;
+    }
+    document.querySelector('.out-20').innerHTML = out20;
 }
 
 document.querySelector('.b-20').onclick = f20;
