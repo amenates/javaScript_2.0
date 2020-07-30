@@ -332,22 +332,18 @@ document.querySelector('.b-16').onclick = f16;
 // Вывод - по нажатию кнопки b-17
 // Вывод в out-17
 
-let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0, 10];
+let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
 function f17() {
-    let out17 = '';
     let temp = 0;
 
     for (let i = 0; i < ar17.length; i++) {
         if (ar17[i] > 3) {
-            ar17[temp] = ar17[i];
-            console.log(ar17[temp]);
-            out17 += ar17[temp];
-            // console.log(out17);            
+            temp = temp + 1;
         }
     }
     
-    document.querySelector('.out-17').innerHTML = out17.length;
+    document.querySelector('.out-17').textContent = temp;
 }
 
 document.querySelector('.b-17').onclick = f17;
