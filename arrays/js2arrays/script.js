@@ -42,8 +42,10 @@ document.querySelector('.out-2').innerHTML = out2;
 
 // при нажатии на кнопку, передвигать 1
 let d = [1, 0, 0, 0, 0];
-document.querySelector('.out-3').innerHTML = d;
 let temp = 0;
+
+document.querySelector('.out-3').innerHTML = d;
+
 
 document.querySelector('.push').onclick = () => {
     if (temp + 1 < 5) {
