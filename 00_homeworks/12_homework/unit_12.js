@@ -3,7 +3,10 @@
 // Первая задача дана в качестве примера.
 
 function f1() {
-    let a1 = [12, [45, 87], [55, 13]];
+    let a1 = [12,
+        [45, 87],
+        [55, 13]
+    ];
     document.querySelector('.out-1').innerHTML = a1[2][0];
     return a1[2][0];
 }
