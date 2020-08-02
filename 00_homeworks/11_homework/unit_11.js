@@ -159,9 +159,14 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let d11 = [2, 3, 4, 5, 6, 7];
+let int11 = +document.querySelector('.i-11').value;
 
 function f11() {
-
+    for (let i = 0; i < d11.length; i++) {
+        d11[i] = d11.indexOf(int11);
+        console.log(d11[i]);
+    }
+    showArr('.out-11', d11);
 }
 
 document.querySelector('.b-11').onclick = f11;
