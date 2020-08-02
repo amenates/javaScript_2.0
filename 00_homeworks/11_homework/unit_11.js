@@ -159,23 +159,24 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let d11 = [2, 3, 4, 5, 6, 7];
-let xxx = +document.querySelector('.i-11').value;
+let int11 = document.querySelector('.i-11');
 
-// function f11() {
-//
-//     // for (let i = 0; i < d11.length; i++) {
-//     //
-//     //     // let temp11 = d11.indexOf(int11);
-//     //     // console.log(temp11);
-//     // }
-//     showArr('.out-11', d11);
-// }
-//
-// document.querySelector('.b-11').onclick = f11;
+function f11() {
 
-document.querySelector('.b-11').onclick = () => {
-    console.log(xxx);
+    for (let i = 0; i < d11.length; i++) {
+        let temp11 = d11.indexOf(+int11.value);
+
+        if (temp11 == d11[i]) {
+            console.log('yes');
+        }
+        else {
+            console.log('no');
+        }
+    }
+    showArr('.out-11', d11);
 }
+
+document.querySelector('.b-11').onclick = f11;
 
 
 // Task 12
