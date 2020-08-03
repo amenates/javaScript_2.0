@@ -230,11 +230,13 @@ let d14 = [];
 let int14 = document.querySelector('.i-14');
 
 function f14() {
+    let temp14 = [];
 
     for (let i = 0; i < +int14.value; i++) {
-        d14[d14.length] += 1;
-        console.log(d14);
+        temp14[temp14.length] = 1;
     }
+
+    d14 = temp14;
 
     showArr('.out-14', d14);
 }
