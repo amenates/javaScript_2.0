@@ -179,8 +179,18 @@ document.querySelector('.b-11').onclick = f11;
 // Вывод в out-12
 
 let d12 = [6, 62, 60, 70, 1, 5];
+let int12 = document.querySelector('.i-12');
 
 function f12() {
+    let result12 = -1;
+
+    for (let i = 0; i < d12.length; i++) {
+        if (+int12.value == d12[i]) {
+            result12 = i;
+            break;
+        }
+    }
+    document.querySelector('.out-12').innerHTML = result12;
 
 }
 
