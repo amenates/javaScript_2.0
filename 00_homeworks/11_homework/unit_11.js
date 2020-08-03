@@ -165,7 +165,7 @@ function f11() {
     let indexElem = d11.indexOf(+int11.value);
     let result11 = -1;
 
-    if (indexElem !== -1) {
+    if (indexElem != -1) {
         result11 = indexElem;
     }
     document.querySelector('.out-11').innerHTML = result11;
