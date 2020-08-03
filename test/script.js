@@ -14,10 +14,10 @@ console.log(idx);
 
 // ---------------------------------------------------------
 
-let int1 = document.querySelector('.i-1');
+let int1 = +document.querySelector('.i-1').value;
 let out1 = document.querySelector('.out-1');
 
 document.querySelector('.b-1').onclick = () => {
-    console.log(+int1.value);
+    console.log(int1);
 
 }

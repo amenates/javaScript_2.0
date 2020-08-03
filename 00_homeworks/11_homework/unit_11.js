@@ -151,7 +151,6 @@ function f10() {
 
 document.querySelector('.b-10').onclick = f10;
 
-
 // Task 11
 // Напишите функцию, которая получает число из input i-11, переводит в число, и с помощью метода indexOf проверяет наличие в массиве d11. Функция выводит в out-11 -1 если такого числа нет в массиве, либо его индекс в массиве.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
@@ -160,26 +159,18 @@ document.querySelector('.b-10').onclick = f10;
 
 let d11 = [2, 3, 4, 5, 6, 7];
 let int11 = document.querySelector('.i-11');
+let out11 = '';
 
 function f11() {
+    let indexElem = d11.indexOf(+int11.value);
+    let result11 = -1;
 
-    for (let i = 0; i < d11.length; i++) {
-        let temp11 = d11.indexOf(+int11.value);
-        
-        console.log(temp11);
-
-        if (temp11 == d11[i]) {
-            d11 = temp11;
-        }
-        else {
-            d11 = '-1';
-        }
+    if (indexElem !== -1) {
+        result11 = indexElem;
     }
-    showArr('.out-11', d11);
+    document.querySelector('.out-11').innerHTML = result11;
 }
-
 document.querySelector('.b-11').onclick = f11;
-
 
 // Task 12
 // Напишите функцию f12, которая эмулирует работу метода indexOf - ищет введенное число в массиве d12 (перебором). Если числа нет - выводит -1, если есть - его позицию в массиве.
