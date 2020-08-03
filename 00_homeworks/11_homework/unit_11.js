@@ -206,6 +206,13 @@ document.querySelector('.b-12').onclick = f12;
 let d13 = [6, 0, 22, 1, 4, 76];
 
 function f13() {
+    let temp13 = [];
+
+    for (let i = d13.length - 1; i > 0; i--) {
+        temp13[temp13.length] = d13[i];
+    }
+
+    d13 = temp13;
 
     showArr('.out-13', d13);
 }
