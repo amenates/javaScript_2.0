@@ -227,8 +227,14 @@ document.querySelector('.b-13').onclick = f13;
 // Вывод в out-14
 
 let d14 = [];
+let int14 = document.querySelector('.i-14');
 
 function f14() {
+
+    for (let i = 0; i < +int14.value; i++) {
+        d14[d14.length] += 1;
+        console.log(d14);
+    }
 
     showArr('.out-14', d14);
 }
