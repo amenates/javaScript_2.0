@@ -165,12 +165,14 @@ function f11() {
 
     for (let i = 0; i < d11.length; i++) {
         let temp11 = d11.indexOf(+int11.value);
+        
+        console.log(temp11);
 
         if (temp11 == d11[i]) {
-            console.log('yes');
+            d11 = temp11;
         }
         else {
-            console.log('no');
+            d11 = '-1';
         }
     }
     showArr('.out-11', d11);
