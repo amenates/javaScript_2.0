@@ -344,9 +344,6 @@ function f19() {
             maxString = d19[i];
             out19 = maxString;
         }
-        // else {
-        //     out19 = d19[i];
-        // }
     }
     document.querySelector('.out-19').innerHTML = out19;
 }
