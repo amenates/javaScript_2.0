@@ -250,10 +250,16 @@ document.querySelector('.b-14').onclick = f14;
 // Вывод в out-15
 
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+let int15 = document.querySelector('.i-15');
 
 function f15() {
+    let indexElem15 = d15.indexOf(+int15.value);
 
-
+    if (indexElem15 != -1) {
+        }
+    else {
+        d15.push(+int15.value);
+    }
     showArr('.out-15', d15);
 }
 
