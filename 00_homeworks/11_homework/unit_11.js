@@ -316,9 +316,11 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод в out-18
 
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
+let int18 = document.querySelector('.i-18');
+let out18 = '';
 
 function f18() {
-
+    document.querySelector('.out-18').innerHTML = d18.includes(int18.value);
 }
 
 document.querySelector('.b-18').onclick = f18;
@@ -340,7 +342,7 @@ function f19() {
 document.querySelector('.b-19').onclick = f19;
 
 // Task 20
-// Напишите функцию f20, которая применяет к массиву d20 метод join с параметрами и соединяет элементы массива в одну строку. Результат выводит в .out-20. В качестве разделителя укажите два апострофа без пробела.
+// Напишите функцию f20, которая применяет к массиву d20 метод join с параметрами и соединяет элементы массива в одну строку. Результат выводит в .out-20. В качестве разделителя укажите два апострофа '' без пробела.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-20
 // Вывод в out-20
@@ -348,7 +350,7 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-
+    document.querySelector('.out-20').innerHTML = d20.join(`''`);
 }
 
 document.querySelector('.b-20').onclick = f20;
