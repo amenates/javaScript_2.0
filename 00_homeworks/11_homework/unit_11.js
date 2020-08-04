@@ -332,11 +332,23 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод - по нажатию кнопки b-19
 // Вывод в out-19
 
-let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
-let maxString = '';
+let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every', "automatically"];
+
+let out19 = '';
 
 function f19() {
+    let maxString = d19[0]// 'Your'
 
+    for (let i = 0; i < d19.length; i++) {
+        if (maxString.length < d19[i].length) {
+            maxString = d19[i];
+            out19 = maxString;
+        }
+        // else {
+        //     out19 = d19[i];
+        // }
+    }
+    document.querySelector('.out-19').innerHTML = out19;
 }
 
 document.querySelector('.b-19').onclick = f19;
