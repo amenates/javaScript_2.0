@@ -170,6 +170,7 @@ function f11() {
     }
     document.querySelector('.out-11').innerHTML = result11;
 }
+
 document.querySelector('.b-11').onclick = f11;
 
 // Task 12
@@ -191,7 +192,6 @@ function f12() {
         }
     }
     document.querySelector('.out-12').innerHTML = result12;
-
 }
 
 document.querySelector('.b-12').onclick = f12;
