@@ -3,10 +3,7 @@
 // Первая задача дана в качестве примера.
 
 function f1() {
-    let a1 = [12,
-        [45, 87],
-        [55, 13]
-    ];
+    let a1 = [12, [45, 87], [55, 13]];
     document.querySelector('.out-1').innerHTML = a1[2][0];
     return a1[2][0];
 }
@@ -20,8 +17,8 @@ document.querySelector('.b-1').onclick = f1;
 
 function f2() {
     let a2 = [[12, 'hi'], [45, 87], [55, 13]];
-
-    // return
+    document.querySelector('.out-2').innerHTML = a2[0][1];
+    return a2[0][1];
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -33,8 +30,8 @@ document.querySelector('.b-2').onclick = f2;
 
 function f3() {
     let a3 = [[1, 2, 3], [3, 4, 5], [6, [7, 'my']]];
-
-    // return
+    document.querySelector('.out-3').innerHTML = a3[2][1][1];
+    return a3[2][1][1];
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -46,8 +43,9 @@ document.querySelector('.b-3').onclick = f3;
 
 function f4() {
     let a4 = [[1, 2, 3], 'go', [3, 4, 5], [6, [7, 'my']]];
-
-    // return
+    console.log(a4);
+    document.querySelector('.out-4').innerHTML = a4[1];
+    return a4[1];
 }
 
 document.querySelector('.b-4').onclick = f4;
