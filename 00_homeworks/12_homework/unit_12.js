@@ -141,9 +141,13 @@ function f9() {
         [21, -34, -43],
         [44, -56]
     ];
-    // цикл + условие
 
-
+    for (let i = 0; i < a9.length; i++) {
+        for (let k = 0; k < a9[i].length; k++) {
+            if (a9[i][k] > 0) out += `${a9[i][k]} `
+        }
+    }
+    document.querySelector('.out-9').innerHTML = out;
 }
 
 document.querySelector('.b-9').onclick = f9;
@@ -160,6 +164,14 @@ function f10() {
         ['st', 21, -34, -43],
         [44, -56, 'task']
     ];
+
+    for (let i = 0; i < a10.length; i++) {
+        for (let k = 0; k < a10[i].length; k++) {
+            let a = typeof a10[i][k];
+            if (a == "string") out += `${a10[i][k]} `;
+        }
+    }
+    document.querySelector('.out-10').innerHTML = out;
 }
 
 document.querySelector('.b-10').onclick = f10;
@@ -176,6 +188,8 @@ let a11 = [
 
 function f11() {
     let out = '';
+    // первый цикл в норм порядке выводит
+    // второй в обратном
 }
 
 document.querySelector('.b-11').onclick = f11;
