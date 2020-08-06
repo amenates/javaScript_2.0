@@ -190,9 +190,8 @@ function f11() {
     let out = '';
 
     for (let i = 0; i < a11.length; i++) {
-        out += a11[i] + ' ';
-        for (let k = a11[i].length; k > 0; k++) {
-            out += a11[k];
+        for (let k = a11[i].length - 1; k >= 0; k--) {
+            out += a11[i][k] + ' ';
         }
     }
     document.querySelector('.out-11').innerHTML = out;
@@ -215,6 +214,7 @@ function f12() {
         [0,1,0,1,0,1,0,1],
         [1,0,1,0,1,0,1,0],
     ];
+    console.log(a12);
 
     for (let i = 0; i < a12.length; i++) {
         for (let k = 0; k < a12[i].length; k++) {

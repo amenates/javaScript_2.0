@@ -213,7 +213,6 @@ function f13() {
     }
 
     d13 = temp13;
-    console.log(d13);
 
     showArr('.out-13', d13);
 }
