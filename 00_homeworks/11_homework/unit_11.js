@@ -208,11 +208,12 @@ let d13 = [6, 0, 22, 1, 4, 76];
 function f13() {
     let temp13 = [];
 
-    for (let i = d13.length - 1; i > 0; i--) {
-        temp13[temp13.length] = d13[i];
+    for (let i = d13.length - 1; i >= 0; i--) {
+        temp13.push(d13[i]);
     }
 
     d13 = temp13;
+    console.log(d13);
 
     showArr('.out-13', d13);
 }
@@ -351,7 +352,7 @@ function f19() {
 document.querySelector('.b-19').onclick = f19;
 
 // Task 20
-// Напишите функцию f20, которая применяет к массиву d20 метод join с параметрами и соединяет элементы массива в одну строку. Результат выводит в .out-20. В качестве разделителя укажите два апострофа '' без пробела.
+// Напишите функцию f20, которая применяет к массиву d20 метод join с параметрами и соединяет элементы массива в одну строку. Результат выводит в .out-20. В качестве разделителя укажите два апострофа без пробела.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-20
 // Вывод в out-20
@@ -359,7 +360,7 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-    document.querySelector('.out-20').innerHTML = d20.join(`''`);
+    document.querySelector('.out-20').innerHTML = d20.join(`"`);
 }
 
 document.querySelector('.b-20').onclick = f20;
