@@ -22,7 +22,7 @@ document.querySelector('.out').textContent += out;
 // let out1 = '';
 //
 // function f1 () {
-//     let int1 = document.querySelector('.int-1').value;
+//     let int1 = do1cument.querySelector('.int-1').value;
 //     let count1 = 0;
 //
 //     for (let i = 0; i < int1.length; i++) {
