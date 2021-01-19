@@ -1,0 +1,28 @@
+/* hr {
+    margin: 20px 0;
+} */
+
+input, button {
+    background: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: .9rem;
+    outline: none;
+}
+
+input:active, input:focus {
+    background: orangered;
+}
+
+input[type="date"] {
+    padding: 8px 20px;
+}
+
+button:hover {
+    background: orangered;
+}
+
+button:active {
+    background: black;
+    color: orangered;
+}
