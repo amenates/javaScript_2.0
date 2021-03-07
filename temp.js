@@ -24,5 +24,3 @@
 // document.querySelector('.b-8').onclick = f8;
 
 alert('hello');
-
-// this is for test
